@@ -38,7 +38,7 @@ public class SimpleHangman {
         String random_hangman_word = hangman_wordlist.get(r.nextInt(hangman_wordlist.size()));
         String blank_spaces[] = new String[random_hangman_word.length()];
         String random_word_array[] = random_hangman_word.split("");
-        System.out.println(Arrays.toString(random_word_array));
+
 
         int wrong_guess_count = 6;
         boolean match = false;
@@ -91,7 +91,7 @@ public class SimpleHangman {
             }
             //Out of attempts, loss prompt.
             else {
-                System.out.println("Sorry! You're out of attempts! Maybe next time.");
+                System.out.println("Sorry! You're out of attempts! The word was "+Arrays.toString(random_word_array)+"Maybe next time.");
             }
         }
     }
